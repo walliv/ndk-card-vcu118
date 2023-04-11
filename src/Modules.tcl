@@ -20,7 +20,6 @@ lappend COMPONENTS [list "SPI_FLASH_DRIVER" $SPI_FLASH_DRIVER_BASE   "FULL"  ]
 lappend COMPONENTS [list "AXI2AVMM_BRIDGE"  $AXI2AVMM_BRIDGE_BASE    "FULL"  ]
 
 # IP sources
-lappend MOD "$ENTITY_BASE/ip/cmac_eth_1x100g/cmac_eth_1x100g.xci"
 if {$ARCHGRP_ARR(PCIE_ENDPOINT_MODE) == 0} {
     lappend MOD "$ENTITY_BASE/ip/pcie4_uscale_plus/x16/pcie4_uscale_plus.xci"
 } else {
@@ -31,6 +30,11 @@ if {$ARCHGRP_ARR(XVC_ENABLE)} {
     lappend MOD "$ENTITY_BASE/ip/xvc_vsec/xvc_vsec.xci"
 }
 
+if {$ARCHGRP_ARR(NET_MOD_ARCH) != "EMPTY"} {
+    lappend MOD "$ENTITY_BASE/ip/cmac_eth_1x100g/cmac_eth_1x100g.xci"
+}
+
 # lappend MOD "$ENTITY_BASE/ip/ddr4_axi/ddr4_axi.xci"
+
 # Top-level
 lappend MOD "$ENTITY_BASE/fpga.vhd"
