@@ -26,15 +26,6 @@ set_property PACKAGE_PIN P6 [get_ports {QSFP0_TX_N[2]}]
 set_property PACKAGE_PIN M7 [get_ports {QSFP0_TX_P[3]}]
 set_property PACKAGE_PIN M6 [get_ports {QSFP0_TX_N[3]}]
 
-#set_property IO_BUFFER_TYPE NONE [get_ports {QSFP0_TX_P[0]}]
-#set_property IO_BUFFER_TYPE NONE [get_ports {QSFP0_TX_N[0]}]
-#set_property IO_BUFFER_TYPE NONE [get_ports {QSFP0_TX_P[1]}]
-#set_property IO_BUFFER_TYPE NONE [get_ports {QSFP0_TX_N[1]}]
-#set_property IO_BUFFER_TYPE NONE [get_ports {QSFP0_TX_P[2]}]
-#set_property IO_BUFFER_TYPE NONE [get_ports {QSFP0_TX_N[2]}]
-#set_property IO_BUFFER_TYPE NONE [get_ports {QSFP0_TX_P[3]}]
-#set_property IO_BUFFER_TYPE NONE [get_ports {QSFP0_TX_N[3]}]
-
 # QSFP port 1 ----------------------------------------------------
 set_property PACKAGE_PIN R9 [get_ports {QSFP1_REFCLK_P}]
 set_property PACKAGE_PIN R8 [get_ports {QSFP1_REFCLK_N}]
@@ -57,17 +48,7 @@ set_property PACKAGE_PIN J4 [get_ports {QSFP1_TX_N[2]}]
 set_property PACKAGE_PIN H7 [get_ports {QSFP1_TX_P[3]}]
 set_property PACKAGE_PIN H6 [get_ports {QSFP1_TX_N[3]}]
 
-#set_property IO_BUFFER_TYPE NONE [get_ports {QSFP1_TX_P[0]}]
-#set_property IO_BUFFER_TYPE NONE [get_ports {QSFP1_TX_N[0]}]
-#set_property IO_BUFFER_TYPE NONE [get_ports {QSFP1_TX_P[1]}]
-#set_property IO_BUFFER_TYPE NONE [get_ports {QSFP1_TX_N[1]}]
-#set_property IO_BUFFER_TYPE NONE [get_ports {QSFP1_TX_P[2]}]
-#set_property IO_BUFFER_TYPE NONE [get_ports {QSFP1_TX_N[2]}]
-#set_property IO_BUFFER_TYPE NONE [get_ports {QSFP1_TX_P[3]}]
-#set_property IO_BUFFER_TYPE NONE [get_ports {QSFP1_TX_N[3]}]
-
 # QSFP misc ---------------------------------------------------
-
 #set_property PACKAGE_PIN AR23 [get_ports {QSFP0_SCL}]
 #set_property PACKAGE_PIN AT22 [get_ports {QSFP0_SDA}]
 set_property PACKAGE_PIN BA22 [get_ports {QSFP0_RESET_N}]
